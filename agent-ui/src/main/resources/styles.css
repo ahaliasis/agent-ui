@@ -1,0 +1,236 @@
+/* ── Root & Base ─────────────────────────────────────────── */
+.root {
+    -fx-background-color: #0f0f13;
+    -fx-font-family: "Segoe UI", "SF Pro Display", sans-serif;
+}
+
+/* ── Top Bar ─────────────────────────────────────────────── */
+.top-bar {
+    -fx-background-color: #16161e;
+    -fx-border-color: #2a2a3a;
+    -fx-border-width: 0 0 1 0;
+}
+
+.title-label {
+    -fx-text-fill: #e8e8f0;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Georgia", serif;
+    -fx-letter-spacing: 1px;
+}
+
+.field-label {
+    -fx-text-fill: #6e6e8a;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-transform: uppercase;
+    -fx-letter-spacing: 1px;
+}
+
+.settings-field {
+    -fx-background-color: #1e1e2e;
+    -fx-text-fill: #c8c8e0;
+    -fx-border-color: #3a3a5a;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 6 10 6 10;
+    -fx-font-size: 13px;
+    -fx-prompt-text-fill: #3a3a5a;
+}
+
+.settings-field:focused {
+    -fx-border-color: #7c6af7;
+    -fx-effect: dropshadow(gaussian, rgba(124,106,247,0.3), 8, 0, 0, 0);
+}
+
+.browse-btn {
+    -fx-background-color: #2a2a3a;
+    -fx-text-fill: #a0a0c0;
+    -fx-border-color: #3a3a5a;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 6 12 6 12;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.browse-btn:hover {
+    -fx-background-color: #3a3a5a;
+    -fx-text-fill: #e0e0f0;
+}
+
+/* ── Chat Scroll ─────────────────────────────────────────── */
+.chat-scroll {
+    -fx-background: #0f0f13;
+    -fx-background-color: #0f0f13;
+    -fx-border-color: transparent;
+}
+
+.chat-scroll .viewport {
+    -fx-background-color: #0f0f13;
+}
+
+.chat-scroll .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 6px;
+}
+
+.chat-scroll .scroll-bar:vertical .thumb {
+    -fx-background-color: #3a3a5a;
+    -fx-background-radius: 3px;
+}
+
+/* ── User Bubble ─────────────────────────────────────────── */
+.user-bubble {
+    -fx-background-color: #2d2060;
+    -fx-background-radius: 16 4 16 16;
+    -fx-padding: 12 16 10 16;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 2);
+}
+
+.user-message-text {
+    -fx-fill: #e8e8f8;
+    -fx-font-size: 14px;
+    -fx-line-spacing: 2px;
+}
+
+/* ── Assistant Bubble ────────────────────────────────────── */
+.assistant-bubble {
+    -fx-background-color: #1a1a24;
+    -fx-background-radius: 4 16 16 16;
+    -fx-padding: 12 16 12 16;
+    -fx-border-color: #2a2a3a;
+    -fx-border-radius: 4 16 16 16;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6, 0, 0, 2);
+}
+
+.assistant-icon {
+    -fx-text-fill: #7c6af7;
+    -fx-font-size: 14px;
+}
+
+.assistant-name {
+    -fx-text-fill: #7c6af7;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-letter-spacing: 1px;
+}
+
+.assistant-message-text {
+    -fx-fill: #c8c8e0;
+    -fx-font-size: 14px;
+    -fx-line-spacing: 3px;
+}
+
+.assistant-text {
+    -fx-line-spacing: 3px;
+}
+
+.thinking-label {
+    -fx-text-fill: #4a4a6a;
+    -fx-font-size: 13px;
+    -fx-font-style: italic;
+}
+
+/* ── Tool Badge ──────────────────────────────────────────── */
+.tool-badge {
+    -fx-background-color: #1e2a1e;
+    -fx-text-fill: #5a9a5a;
+    -fx-border-color: #2a4a2a;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 3 10 3 10;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+/* ── System Message ──────────────────────────────────────── */
+.system-message {
+    -fx-text-fill: #4a4a6a;
+    -fx-font-size: 12px;
+    -fx-background-color: #16161e;
+    -fx-background-radius: 20px;
+    -fx-padding: 5 14 5 14;
+    -fx-border-color: #2a2a3a;
+    -fx-border-radius: 20px;
+}
+
+/* ── Time Label ──────────────────────────────────────────── */
+.time-label {
+    -fx-text-fill: #3a3a5a;
+    -fx-font-size: 10px;
+}
+
+/* ── Error Text ──────────────────────────────────────────── */
+.error-text {
+    -fx-fill: #e05a5a;
+    -fx-font-size: 13px;
+}
+
+/* ── Bottom Bar ──────────────────────────────────────────── */
+.bottom-bar {
+    -fx-background-color: #16161e;
+    -fx-border-color: #2a2a3a;
+    -fx-border-width: 1 0 0 0;
+}
+
+.input-area {
+    -fx-background-color: #1e1e2e;
+    -fx-text-fill: #c8c8e0;
+    -fx-border-color: #3a3a5a;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10 14 10 14;
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: #3a3a5a;
+}
+
+.input-area:focused {
+    -fx-border-color: #7c6af7;
+    -fx-effect: dropshadow(gaussian, rgba(124,106,247,0.2), 10, 0, 0, 0);
+}
+
+.hint-label {
+    -fx-text-fill: #3a3a5a;
+    -fx-font-size: 11px;
+}
+
+/* ── Buttons ─────────────────────────────────────────────── */
+.send-btn {
+    -fx-background-color: #7c6af7;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-background-radius: 8px;
+    -fx-padding: 8 20 8 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(124,106,247,0.4), 8, 0, 0, 2);
+}
+
+.send-btn:hover {
+    -fx-background-color: #9480ff;
+    -fx-effect: dropshadow(gaussian, rgba(124,106,247,0.6), 12, 0, 0, 3);
+}
+
+.send-btn:disabled {
+    -fx-background-color: #3a3060;
+    -fx-text-fill: #6a60a0;
+    -fx-effect: none;
+}
+
+.clear-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #4a4a6a;
+    -fx-border-color: #2a2a3a;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 8 16 8 16;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+}
+
+.clear-btn:hover {
+    -fx-text-fill: #8a8aaa;
+    -fx-border-color: #4a4a6a;
+}
